@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="webpack1.首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
+用 npm 安装 Webpack：
+$ npm install webpack -g此时 Webpack 已经安装到" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>webpack 学习 | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="webpack1.首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。 用 npm 安装 Webpack： $ npm install webpack -g此时 Webpack 已经安装到了全局环境下，可以通过命令行 webpack -h 试试。 通常我们会将 Webpack 安装到项目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="webpack 学习">
+<meta property="og:url" content="https://yasminey.github.io/2017/07/13/webpack-学习/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="webpack1.首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。 用 npm 安装 Webpack： $ npm install webpack -g此时 Webpack 已经安装到了全局环境下，可以通过命令行 webpack -h 试试。 通常我们会将 Webpack 安装到项目">
+<meta property="og:updated_time" content="2017-07-15T16:16:20.735Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="webpack 学习">
+<meta name="twitter:description" content="webpack1.首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。 用 npm 安装 Webpack： $ npm install webpack -g此时 Webpack 已经安装到了全局环境下，可以通过命令行 webpack -h 试试。 通常我们会将 Webpack 安装到项目">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="我的博客" rel="home">我的博客</a>
+      </h1>
+      
+        <h2 class="site-description">
+          <a href="/" id="subtitle">我的第一个博客</a>
+        </h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-webpack-学习" class="post-webpack-学习 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      webpack 学习
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/13/webpack-学习/" data-id="cj56fepux0006esupc51eg92j" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h1><p>1.首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。</p>
+<p>用 npm 安装 Webpack：</p>
+<p>$ npm install webpack -g<br>此时 Webpack 已经安装到了全局环境下，可以通过命令行 webpack -h 试试。</p>
+<p>通常我们会将 Webpack 安装到项目的依赖中，这样就可以使用项目本地版本的 Webpack。</p>
+<h1 id="进入项目目录"><a href="#进入项目目录" class="headerlink" title="进入项目目录"></a>进入项目目录</h1><h1 id="确定已经有-package-json，没有就通过-npm-init-创建"><a href="#确定已经有-package-json，没有就通过-npm-init-创建" class="headerlink" title="确定已经有 package.json，没有就通过 npm init 创建"></a>确定已经有 package.json，没有就通过 npm init 创建</h1><h1 id="安装-webpack-依赖"><a href="#安装-webpack-依赖" class="headerlink" title="安装 webpack 依赖"></a>安装 webpack 依赖</h1><p>$ npm install webpack –save-dev</p>
+<p>2.在根目录下创建 webpack.config.js<br> 配置webpack.config.js<br>  module.exports= {<br>  <!-- 入库文件 --><br>  entry: ‘./index.js’,<br>  <!-- 打包后的文件路径 --><br>  output: {<br>    path: __dirname+’/dist’,<br>    filename: ‘bundle.js’<br>}<br>}<br>3.打包 webpack<br>4.配置开发环境:$ npm install webpack-dev-server -g<br>  颜色   $ webpack-dev-server –progress –colors<br>  监听:  $ webpack-dev-server –progress –colors –watch(自动刷新,或者–inline)<br>它将在 localhost:8080 启动一个 express 静态资源 web 服务器，并且会以监听模式自动运行 webpack，在浏览器打开 <a href="http://localhost:8080/" target="_blank" rel="external">http://localhost:8080/</a> 或 <a href="http://localhost:8080/webpack-dev-server/" target="_blank" rel="external">http://localhost:8080/webpack-dev-server/</a> 可以浏览项目中的页面和编译后的资源输出，并且通过一个 socket.io 服务实时监听它们的变化并自动刷新页面。<br>(1.先输入localhost:8080查看显示情况,在输入<a href="http://localhost:8080/webpack-dev-server后按提示点击到页面,有时候直接输入http://localhost:8080/webpack-dev-server/" target="_blank" rel="external">http://localhost:8080/webpack-dev-server后按提示点击到页面,有时候直接输入http://localhost:8080/webpack-dev-server/</a> 没有监听效果,需要按1操作)</p>
+<p>5.index.js要识别style.css  要加载css-loader(引入style.css)和style-loader(识别写好的样式)<br> 下载:npm install css-loader –save<br> 识别style (css中的内容)<br>  下载:npm install style-loader –save</p>
+<p>  功能:模块引入 实现监听 打包</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2017/07/13/webpack-学习/">
+    <time datetime="2017-07-13T11:53:20.000Z" class="entry-date">
+        2017-07-13
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2017/07/14/hello-world/" rel="prev"><span class="meta-nav">←</span> Hello World</a></span>
+    
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/14/app/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/14/hexo-创建/">hexo 创建</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/14/我的第一个博客日志/">我的第一个博客日志</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/14/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/13/webpack-学习/">webpack 学习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2017 yasmine
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>

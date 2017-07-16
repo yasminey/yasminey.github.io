@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="首先引入两位带头大哥(这两个模块非常重要)
+import React from ‘react’import ReactDOM from ‘react-dom’import ‘./index.css’
+自定义组件 名字第一个字母要大写,为了跟原生的标签区分,component 组件,继承原生class" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>react | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="首先引入两位带头大哥(这两个模块非常重要) import React from ‘react’import ReactDOM from ‘react-dom’import ‘./index.css’ 自定义组件 名字第一个字母要大写,为了跟原生的标签区分,component 组件,继承原生class UI extends React.Component{constructor(){  super(">
+<meta property="og:type" content="website">
+<meta property="og:title" content="react">
+<meta property="og:url" content="https://yasminey.github.io/react.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="首先引入两位带头大哥(这两个模块非常重要) import React from ‘react’import ReactDOM from ‘react-dom’import ‘./index.css’ 自定义组件 名字第一个字母要大写,为了跟原生的标签区分,component 组件,继承原生class UI extends React.Component{constructor(){  super(">
+<meta property="og:updated_time" content="2017-07-14T06:32:47.838Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="react">
+<meta name="twitter:description" content="首先引入两位带头大哥(这两个模块非常重要) import React from ‘react’import ReactDOM from ‘react-dom’import ‘./index.css’ 自定义组件 名字第一个字母要大写,为了跟原生的标签区分,component 组件,继承原生class UI extends React.Component{constructor(){  super(">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="我的博客" rel="home">我的博客</a>
+      </h1>
+      
+        <h2 class="site-description">
+          <a href="/" id="subtitle">我的第一个博客</a>
+        </h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="page-undefined" class="page-undefined post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      react
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/react.html" data-id="cj56fepsj0001esupcvd8kpcp" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>首先引入两位带头大哥(这两个模块非常重要)</p>
+<p>import React from ‘react’<br>import ReactDOM from ‘react-dom’<br>import ‘./index.css’</p>
+<p>自定义组件 名字第一个字母要大写,为了跟原生的标签区分,component 组件,继承原生<br>class UI extends React.Component{<br>constructor(){<br>  super()</p>
+<p> 第一位护法 state,<br>  this.state={<br>  time:(new Date()).toLocaleTimeString()<br>  name:</p>
+<p>  }<br>  setInterval(()=&gt;{<br>  <!-- 要想修改state,必须通过setState --><br>  <!-- get方法只可读,不可写 --><br>  <!--setState方法结束之后,要调用render()  --><br>  this.setState({<br>  time:(new Date()).toLocaleTimeString()<br>  })<br>  },1000)</p>
+<p>  setTimeout(()=&gt;{<br>    this.setState{<br>        name:xiaoming<br>    }<br>  },1000)<br>}<br>time(t){<br>return(t)<br>}<br>say(){</p>
+<p>}<br>render(){<br>return(</p>
+<p><ul><br>    <li classname="{this.state.name}">{1+1}</li><br>    <li>{2+2}</li><br>    <li>{3&gt;4?’真的’:’假的’}</li><br>    <li>{this.times(‘6th’)}</li><br>    <li>{this.state.time}</li><br>    <li>onClick={this.say()}点我</li><br></ul>)</p>
+<p>}</p>
+<p>}<br> state(状态)<br>有一位神秘的卧底jsx,可以将xml标签使用jsx工具转化成纯js代码</p>
+<p>第一个参数一定是闭合标签,必须包装在一个封闭的标签<br>插值{},有点特别,基本上在任何地方都能插值<br>在react中设置类名class,必须改成className (大写的是驼峰标识,第一个单词小写后面的单词大写:className)<br>react中的input中for属性,要写成htmlFor<br>ReactDOM.render(</p>
+<p><div id="app"></div></p>
+<p></p><h1>我是第一个标签</h1><p></p>
+<p></p><h2>我的第二个标签</h2><p></p>
+<p><div id="header"></div><br> <ui><br><br>document.getElementById(‘root’)</ui></p>
+<pre><code>)
+</code></pre><p>react 组件化<br>export default UI;</p>
+<p>在react中index.js都是入口文件<br>import React from ‘react’<br>export defult class app extends React.Component{<br>    constructor(){<br>        super()<br>        this.state={<br>            count:0<br>        }<br>    }<br>    countHandler(){<br>     this.setState({<br>         count:this.state.count++<br>     })<br>    }</p>
+<pre><code>render(){
+    return(
+        &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+        &lt;h2&gt;&lt;/h2&gt;
+        &lt;p&gt;我是第一个react的app&lt;/p&gt;
+        &lt;button onClick={this.countHandler.bind(this)}&gt;&lt;/button&gt;
+        )
+}
+</code></pre><p>}</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/react.html">
+    <time datetime="2017-07-14T02:50:47.000Z" class="entry-date">
+        2017-07-14
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/14/app/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/14/hexo-创建/">hexo 创建</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/14/我的第一个博客日志/">我的第一个博客日志</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/14/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/13/webpack-学习/">webpack 学习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2017 yasmine
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>

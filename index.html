@@ -61,6 +61,63 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-app" class="post-app post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/14/app/" data-id="cj56fepug0005esupr16w5p8p" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        import React from 'react'
+export defult class app extends React.Component{
+	constructor(){
+		super()
+		this.state={
+			count:0
+		}
+	}
+	countHandler(){
+     this.setState({
+     	count:this.state.count++
+     })
+	}
+	
+	render(){
+		return(
+			<div id="app"></div>
+			<h2></h2>
+			<p>我是第一个react的app</p>
+			<button onclick="{this.countHandler.bind(this)}"></button>
+			)
+	}
+}
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2017/07/14/app/">
+    <time datetime="2017-07-14T06:34:42.218Z" class="entry-date">
+        2017-07-14
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-hexo-创建" class="post-hexo-创建 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -76,7 +133,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/14/hexo-创建/" data-id="cj52skktq0001hwup7h3n69lp" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/14/hexo-创建/" data-id="cj56fepug0004esup0y252auf" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -219,7 +276,7 @@ hexo deploy
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/14/我的第一个博客日志/" data-id="cj52skktu0002hwuprqfmd61t" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/14/我的第一个博客日志/" data-id="cj56fepug0003esup6603fzw6" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -262,7 +319,7 @@ hexo deploy
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/14/hello-world/" data-id="cj52skkti0000hwup5geknnpg" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/14/hello-world/" data-id="cj56fepu10002esupstirhy91" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -285,6 +342,56 @@ hexo deploy
     <a href="/2017/07/14/hello-world/">
     <time datetime="2017-07-13T16:47:09.568Z" class="entry-date">
         2017-07-14
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-webpack-学习" class="post-webpack-学习 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2017/07/13/webpack-学习/">webpack 学习</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/2017/07/13/webpack-学习/" data-id="cj56fepux0006esupc51eg92j" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h1><p>1.首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。</p>
+<p>用 npm 安装 Webpack：</p>
+<p>$ npm install webpack -g<br>此时 Webpack 已经安装到了全局环境下，可以通过命令行 webpack -h 试试。</p>
+<p>通常我们会将 Webpack 安装到项目的依赖中，这样就可以使用项目本地版本的 Webpack。</p>
+<h1 id="进入项目目录"><a href="#进入项目目录" class="headerlink" title="进入项目目录"></a>进入项目目录</h1><h1 id="确定已经有-package-json，没有就通过-npm-init-创建"><a href="#确定已经有-package-json，没有就通过-npm-init-创建" class="headerlink" title="确定已经有 package.json，没有就通过 npm init 创建"></a>确定已经有 package.json，没有就通过 npm init 创建</h1><h1 id="安装-webpack-依赖"><a href="#安装-webpack-依赖" class="headerlink" title="安装 webpack 依赖"></a>安装 webpack 依赖</h1><p>$ npm install webpack –save-dev</p>
+<p>2.在根目录下创建 webpack.config.js<br> 配置webpack.config.js<br>  module.exports= {<br>  <!-- 入库文件 --><br>  entry: ‘./index.js’,<br>  <!-- 打包后的文件路径 --><br>  output: {<br>    path: __dirname+’/dist’,<br>    filename: ‘bundle.js’<br>}<br>}<br>3.打包 webpack<br>4.配置开发环境:$ npm install webpack-dev-server -g<br>  颜色   $ webpack-dev-server –progress –colors<br>  监听:  $ webpack-dev-server –progress –colors –watch(自动刷新,或者–inline)<br>它将在 localhost:8080 启动一个 express 静态资源 web 服务器，并且会以监听模式自动运行 webpack，在浏览器打开 <a href="http://localhost:8080/" target="_blank" rel="external">http://localhost:8080/</a> 或 <a href="http://localhost:8080/webpack-dev-server/" target="_blank" rel="external">http://localhost:8080/webpack-dev-server/</a> 可以浏览项目中的页面和编译后的资源输出，并且通过一个 socket.io 服务实时监听它们的变化并自动刷新页面。<br>(1.先输入localhost:8080查看显示情况,在输入<a href="http://localhost:8080/webpack-dev-server后按提示点击到页面,有时候直接输入http://localhost:8080/webpack-dev-server/" target="_blank" rel="external">http://localhost:8080/webpack-dev-server后按提示点击到页面,有时候直接输入http://localhost:8080/webpack-dev-server/</a> 没有监听效果,需要按1操作)</p>
+<p>5.index.js要识别style.css  要加载css-loader(引入style.css)和style-loader(识别写好的样式)<br> 下载:npm install css-loader –save<br> 识别style (css中的内容)<br>  下载:npm install style-loader –save</p>
+<p>  功能:模块引入 实现监听 打包</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2017/07/13/webpack-学习/">
+    <time datetime="2017-07-13T11:53:20.000Z" class="entry-date">
+        2017-07-13
     </time>
 </a>
     
@@ -321,6 +428,10 @@ hexo deploy
       <ul>
         
           <li>
+            <a href="/2017/07/14/app/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2017/07/14/hexo-创建/">hexo 创建</a>
           </li>
         
@@ -330,6 +441,10 @@ hexo deploy
         
           <li>
             <a href="/2017/07/14/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/13/webpack-学习/">webpack 学习</a>
           </li>
         
       </ul>
