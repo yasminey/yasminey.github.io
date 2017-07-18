@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   
   
+  <meta name="description" content="安装create-react-app$ npm install -g create-react-app$ create-react-app my-app my-app是目录名字,自己起名字,不要和npm中的依赖重名$ cd my-app/$ npm start 启动项目$ npm run bulid" />
+  
 
   
   
@@ -13,13 +15,16 @@
   
   <title>react 学习 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="安装create-react-app$ npm install -g create-react-app$ create-react-app my-app my-app是目录名字,自己起名字,不要和npm中的依赖重名$ cd my-app/$ npm start 启动项目$ npm run bulid 打包将自动生成的src中文件留下index.js,index.css,logosvg,其他删除 在">
+<meta property="og:type" content="website">
 <meta property="og:title" content="react 学习">
 <meta property="og:url" content="https://yasminey.github.io/react-学习.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:updated_time" content="2017-07-16T07:34:01.826Z">
+<meta property="og:description" content="安装create-react-app$ npm install -g create-react-app$ create-react-app my-app my-app是目录名字,自己起名字,不要和npm中的依赖重名$ cd my-app/$ npm start 启动项目$ npm run bulid 打包将自动生成的src中文件留下index.js,index.css,logosvg,其他删除 在">
+<meta property="og:updated_time" content="2017-07-18T09:36:22.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react 学习">
+<meta name="twitter:description" content="安装create-react-app$ npm install -g create-react-app$ create-react-app my-app my-app是目录名字,自己起名字,不要和npm中的依赖重名$ cd my-app/$ npm start 启动项目$ npm run bulid 打包将自动生成的src中文件留下index.js,index.css,logosvg,其他删除 在">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -75,13 +80,24 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://yasminey.github.io/react-学习.html" data-id="cj56flx310000houpmot9vmav" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://yasminey.github.io/react-学习.html" data-id="cj59lywbf0000qwupriazjpm3" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        
+        <p>安装<br>create-react-app<br>$ npm install -g create-react-app<br>$ create-react-app my-app my-app是目录名字,自己起名字,不要和npm中的依赖重名<br>$ cd my-app/<br>$ npm start 启动项目<br>$ npm run bulid 打包<br>将自动生成的src中文件留下index.js,index.css,logosvg,其他删除</p>
+<p>在index.js中首先引入两位带头大哥(这两个模块非常重要)</p>
+<p>import React from ‘react’<br>import ReactDOM from ‘react-dom’<br><!-- reactDOM 作用:控制页面的内容
+第一个参数是渲染的dom元素,第二个参数是渲染的位置
+第一个参数必须放置在一个闭合标签 --><br>ReactDOM.render(</p>
+<p></p><h1></h1>,<br> document.getElementById(‘root’)<br>)<p></p>
+<p>//react只有一个div,虚拟dom ,性能高<br>jsx==js+x ==JavaScript+xml<br>语法糖,能将html dom 元素在javascript代码识别<br>组件==对象</p>
+<p>插值用{},插值里不能用if语句</p>
+<p>在react中设置类名class,必须改成className (大写的是驼峰标识,第一个单词小写后面的单词大写:className)<br>react中的input中for属性,要写成htmlFor</p>
+<p>组件:自定义组件首字母要大写,用于区分html标签<br>state ,要想修改state,要用setState({})<br>get方法只能读不可写,set可读可写<br>在react中 index.js都是入口文件,不做大量的操作<br>在使用 JavaScript classes 时，你必须调用 super(); 方法才能在继承父类的子类中正确获取到类型的 this 。<br>在组件中方法要确定this指的是当前的组件,绑定this用箭头函数,bind(this,’参数’)<br>父级往子集传值,在父级中自定义属性,子集用props<br>ziji wang fuji chuan shijian,yong zidingyi shijian<br>input 表单里onChange事件,会通过代理的方式传入你想要的内容<br>input 中的value要写成defaultValue</p>
+<p>无状态组件不需要写render()方法,固定写法是export default function xx(){<br>    return(<br>    )<br>}</p>
+
       
     </div><!-- .entry-content -->
 
